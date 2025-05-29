@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimédia - Mouvement de Réveil Méthodiste</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar (identique) -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Réveil en ligne <span>MRM</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="evenements.html"><i class="fas fa-calendar-alt"></i> Événements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="multimedia.html"><i class="fas fa-video"></i> Multimédia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="priere.html"><i class="fas fa-pray"></i> Espace prière</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="enseignements.html"><i class="fas fa-book-open"></i> Enseignements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="communaute.html"><i class="fas fa-users"></i> Communauté</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-sm btn-warning text-primary ms-2" href="soutenir.html"><i class="fas fa-heart"></i> Soutenir</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- News Ticker -->
+    <div class="news-ticker">
+        <div class="container">
+            <div class="ticker-wrapper d-flex align-items-center">
+                <span class="fw-bold me-3"><i class="fas fa-bullhorn"></i> Actualités :</span>
+                <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+                    Nouvelle série de prédications disponible • Replay de la dernière veillée en ligne • Abonnez-vous à MOREV TV
+                </marquee>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container text-center">
+            <i class="fas fa-video page-icon"></i>
+            <h1 class="page-title">Espace Multimédia</h1>
+            <p class="lead">Retrouvez toutes nos vidéos, prédications et ressources audio-visuelles</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container py-5">
+        <!-- Vidéos récentes -->
+        <section class="mb-5">
+            <h2 class="section-title">Dernières vidéos</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card media-card h-100">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">La puissance de la prière persévérante</h5>
+                            <p class="card-text">Prédication du pasteur sur l'importance de la persévérance dans la vie de prière.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted"><i class="fas fa-eye"></i> 1,245 vues</small>
+                                <a href="#" class="btn btn-danger btn-sm"><i class="fab fa-youtube"></i> Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card media-card h-100">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Session de louange - Veillée de Pâques</h5>
+                            <p class="card-text">Moments forts de la louange lors de notre dernière veillée pascale.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted"><i class="fas fa-eye"></i> 892 vues</small>
+                                <a href="#" class="btn btn-danger btn-sm"><i class="fab fa-youtube"></i> Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card media-card h-100">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Étude biblique - Les fondements de la foi</h5>
+                            <p class="card-text">Première partie de notre série sur les fondements de la foi chrétienne.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted"><i class="fas fa-eye"></i> 1,532 vues</small>
+                                <a href="#" class="btn btn-danger btn-sm"><i class="fab fa-youtube"></i> Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="https://youtube.com/MOREVTV" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-youtube"></i> Visitez MOREV TV
+                </a>
+            </div>
+        </section>
+
+        <!-- Playlists -->
+        <section class="mb-5">
+            <h2 class="section-title">Playlists thématiques</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card media-card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-pray fa-3x mb-3 text-primary"></i>
+                            <h5>École de Prière</h5>
+                            <p>Série d'enseignements pour approfondir votre vie de prière</p>
+                            <a href="#" class="btn btn-outline-primary">Voir la playlist</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card media-card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-bible fa-3x mb-3 text-primary"></i>
+                            <h5>Études Bibliques</h5>
+                            <p>Approfondissement livre par livre de la Parole de Dieu</p>
+                            <a href="#" class="btn btn-outline-primary">Voir la playlist</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card media-card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-microphone-alt fa-3x mb-3 text-primary"></i>
+                            <h5>Prédications</h5>
+                            <p>Messages puissants pour votre édification personnelle</p>
+                            <a href="#" class="btn btn-outline-primary">Voir la playlist</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Audio Section -->
+        <section class="bg-light p-4 rounded mb-5">
+            <h2 class="section-title">Ressources Audio</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="d-flex align-items-center mb-3 p-3 bg-white rounded">
+                        <i class="fas fa-music fa-2x me-3 text-primary"></i>
+                        <div>
+                            <h5 class="mb-1">Louange & Adoration</h5>
+                            <small class="text-muted">10 enregistrements disponibles</small>
+                        </div>
+                        <a href="#" class="ms-auto btn btn-sm btn-outline-primary">Écouter</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex align-items-center mb-3 p-3 bg-white rounded">
+                        <i class="fas fa-podcast fa-2x me-3 text-primary"></i>
+                        <div>
+                            <h5 class="mb-1">Podcasts Spirituels</h5>
+                            <small class="text-muted">15 épisodes disponibles</small>
+                        </div>
+                        <a href="#" class="ms-auto btn btn-sm btn-outline-primary">Écouter</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (identique) -->
+    <footer>
+        <!-- ... même footer que précédemment ... -->
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+

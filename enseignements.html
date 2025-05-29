@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enseignements - Mouvement de Réveil Méthodiste</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar (identique) -->
+      <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Réveil en ligne <span>MRM</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="evenements.html"><i class="fas fa-calendar-alt"></i> Événements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="multimedia.html"><i class="fas fa-video"></i> Multimédia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="priere.html"><i class="fas fa-pray"></i> Espace prière</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="enseignements.html"><i class="fas fa-book-open"></i> Enseignements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="communaute.html"><i class="fas fa-users"></i> Communauté</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-sm btn-warning text-primary ms-2" href="soutenir.html"><i class="fas fa-heart"></i> Soutenir</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- News Ticker -->
+    <div class="news-ticker">
+        <div class="container">
+            <div class="ticker-wrapper d-flex align-items-center">
+                <span class="fw-bold me-3"><i class="fas fa-bullhorn"></i> Actualités :</span>
+                <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+                    Nouvelle série d'enseignements sur la prière • Téléchargez le guide d'étude biblique • Prochaine session de formation le 15 juin
+                </marquee>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container text-center">
+            <i class="fas fa-book-open page-icon"></i>
+            <h1 class="page-title">Enseignements Bibliques</h1>
+            <p class="lead">Ressources pour approfondir votre connaissance de la Parole de Dieu</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container py-5">
+        <!-- Catégories -->
+        <section class="mb-5">
+            <h2 class="section-title">Catégories d'enseignements</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card teaching-card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-pray fa-3x mb-3 text-primary"></i>
+                            <h4>Vie de Prière</h4>
+                            <p>Enseignements pour fortifier votre communion avec Dieu</p>
+                            <a href="#" class="btn btn-outline-primary">Explorer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card teaching-card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-bible fa-3x mb-3 text-primary"></i>
+                            <h4>Études Bibliques</h4>
+                            <p>Approfondissement livre par livre de la Bible</p>
+                            <a href="#" class="btn btn-outline-primary">Explorer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card teaching-card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-cross fa-3x mb-3 text-primary"></i>
+                            <h4>Doctrine Chrétienne</h4>
+                            <p>Fondements de la foi et théologie pratique</p>
+                            <a href="#" class="btn btn-outline-primary">Explorer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Derniers enseignements -->
+        <section class="mb-5">
+            <h2 class="section-title">Derniers enseignements</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card teaching-card h-100">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">PDF</span>
+                            <h5 class="card-title">Les 7 clés d'une prière efficace</h5>
+                            <p class="card-text">Guide pratique pour transformer votre vie de prière selon les principes bibliques.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted"><i class="fas fa-file-pdf"></i> 12 pages</small>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Télécharger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card teaching-card h-100">
+                        <div class="card-body">
+                            <span class="badge bg-danger mb-2">Vidéo</span>
+                            <h5 class="card-title">Introduction à l'épître aux Romains</h5>
+                            <p class="card-text">Première partie de notre série d'étude sur ce livre fondamental de Paul.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted"><i class="fas fa-clock"></i> 45 min</small>
+                                <a href="#" class="btn btn-sm btn-outline-danger">Regarder</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card teaching-card h-100">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Audio</span>
+                            <h5 class="card-title">Le combat spirituel du chrétien</h5>
+                            <p class="card-text">Enseignement audio sur les armes spirituelles et la victoire en Christ.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted"><i class="fas fa-headphones"></i> 38 min</small>
+                                <a href="#" class="btn btn-sm btn-outline-success">Écouter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-primary">Voir tous les enseignements</a>
+            </div>
+        </section>
+
+        <!-- Formation en ligne -->
+        <section class="bg-light p-4 rounded mb-5">
+            <h2 class="section-title">Formations en ligne</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h4>École de Discipulat</h4>
+                    <p>Notre programme structuré en 12 modules pour former des disciples matures, capables d'en former d'autres à leur tour.</p>
+                    <ul class="mb-4">
+                        <li>Modules progressifs avec exercices pratiques</li>
+                        <li>Certificat de complétion</li>
+                        <li>Accès à une communauté d'apprentissage</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Découvrir la formation</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://api.placeholder.com/500x300" class="img-fluid rounded" alt="Formation en ligne">
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog -->
+        <section>
+            <h2 class="section-title">Articles du Blog</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card teaching-card h-100">
+                        <img src="https://api.placeholder.com/400x200" class="card-img-top" alt="Article blog">
+                        <div class="card-body">
+                            <h5 class="card-title">5 façons de cultiver votre relation avec Dieu</h5>
+                            <p class="card-text">Des pratiques simples mais puissantes pour approfondir votre marche quotidienne avec le Seigneur.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Lire l'article</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card teaching-card h-100">
+                        <img src="https://api.placeholder.com/400x200" class="card-img-top" alt="Article blog">
+                        <div class="card-body">
+                            <h5 class="card-title">Comprendre le baptême du Saint-Esprit</h5>
+                            <p class="card-text">Exégèse biblique et expérience pratique de cette dimension essentielle de la vie chrétienne.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Lire l'article</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <a href="#" class="btn btn-outline-primary">Visiter notre blog complet</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (identique) -->
+    <footer>
+        <!-- ... même footer ... -->
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

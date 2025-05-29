@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace Prière - Mouvement de Réveil Méthodiste</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar (identique) -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Réveil en ligne <span>MRM</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="evenements.html"><i class="fas fa-calendar-alt"></i> Événements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="multimedia.html"><i class="fas fa-video"></i> Multimédia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="priere.html"><i class="fas fa-pray"></i> Espace prière</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="enseignements.html"><i class="fas fa-book-open"></i> Enseignements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="communaute.html"><i class="fas fa-users"></i> Communauté</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-sm btn-warning text-primary ms-2" href="soutenir.html"><i class="fas fa-heart"></i> Soutenir</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- News Ticker -->
+    <div class="news-ticker">
+        <div class="container">
+            <div class="ticker-wrapper d-flex align-items-center">
+                <span class="fw-bold me-3"><i class="fas fa-bullhorn"></i> Actualités :</span>
+                <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+                    Chaîne de prière 24h/24 sur WhatsApp • Prochaine veillée de prière ce vendredi • Nouveaux sujets de prière disponibles
+                </marquee>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container text-center">
+            <i class="fas fa-praying-hands page-icon"></i>
+            <h1 class="page-title">Espace Prière</h1>
+            <p class="lead">Déposez vos requêtes de prière et intercédez pour les besoins de la communauté</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container py-5">
+        <div class="row">
+            <!-- Formulaire de prière -->
+            <div class="col-lg-6 mb-5">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="section-title mb-4"><i class="fas fa-hands-praying me-2"></i> Demande d'intercession</h2>
+                        <form class="prayer-form">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Votre nom (optionnel)</label>
+                                <input type="text" class="form-control" id="name" placeholder="Comment souhaitez-vous être appelé(e)?">
+                            </div>
+                            <div class="mb-3">
+                                <label for="prayerType" class="form-label">Type de prière</label>
+                                <select class="form-select" id="prayerType">
+                                    <option selected>Choisissez une catégorie</option>
+                                    <option>Santé / Guérison</option>
+                                    <option>Famille / Relations</option>
+                                    <option>Délivrance / Combat spirituel</option>
+                                    <option>Besoins financiers</option>
+                                    <option>Orientation / Décision</option>
+                                    <option>Autre besoin</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="prayerRequest" class="form-label">Votre demande de prière</label>
+                                <textarea class="form-control" id="prayerRequest" rows="5" placeholder="Exprimez votre besoin de prière avec vos propres mots..."></textarea>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" id="confidential">
+                                <label class="form-check-label" for="confidential">
+                                    Garder cette demande confidentielle (visible par les intercesseurs seulement)
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">
+                                <i class="fas fa-paper-plane me-2"></i> Envoyer ma demande
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sujets de prière -->
+            <div class="col-lg-6">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="section-title mb-4"><i class="fas fa-list-check me-2"></i> Sujets de prière actuels</h2>
+                        <div class="list-group">
+                            <div class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1 text-primary"><i class="fas fa-globe me-2"></i> Paix dans le monde</h5>
+                                    <small>25 prières</small>
+                                </div>
+                                <p class="mb-1">Prions pour les nations en conflit et les dirigeants mondiaux</p>
+                                <small><a href="#" class="text-muted">Rejoindre cette intercession</a></small>
+                            </div>
+                            <div class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1 text-primary"><i class="fas fa-church me-2"></i> Églises persécutées</h5>
+                                    <small>18 prières</small>
+                                </div>
+                                <p class="mb-1">Intercédons pour nos frères et sœurs en difficulté à cause de leur foi</p>
+                                <small><a href="#" class="text-muted">Rejoindre cette intercession</a></small>
+                            </div>
+                            <div class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1 text-primary"><i class="fas fa-heart me-2"></i> Réveil spirituel</h5>
+                                    <small>32 prières</small>
+                                </div>
+                                <p class="mb-1">Prions pour un puissant déversement du Saint-Esprit dans nos nations</p>
+                                <small><a href="#" class="text-muted">Rejoindre cette intercession</a></small>
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <h5 class="section-title"><i class="fas fa-users me-2"></i> Chaîne de prière</h5>
+                            <p>Rejoignez notre groupe WhatsApp de prière 24h/24 pour recevoir les sujets de prière et intercéder avec la communauté.</p>
+                            <a href="#" class="btn btn-success">
+                                <i class="fab fa-whatsapp me-2"></i> Rejoindre le groupe
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Témoignages de prière exaucée -->
+        <section class="mt-5">
+            <h2 class="section-title"><i class="fas fa-hands-holding-heart me-2"></i> Témoignages de prière</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="testimony-card h-100">
+                        <p class="quote">"Après avoir soumis ma demande de prière pour mon fils malade, j'ai vu une amélioration miraculeuse de son état de santé en moins d'une semaine."</p>
+                        <div class="d-flex align-items-center mt-3">
+                            <i class="fas fa-user-circle fa-2x text-primary me-2"></i>
+                            <div>
+                                <h6 class="mb-0">Sarah K.</h6>
+                                <small class="text-muted">Lyon, France</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="testimony-card h-100">
+                        <p class="quote">"La chaîne de prière m'a soutenu pendant une période très difficile. Je ressens une vraie communion fraternelle malgré la distance."</p>
+                        <div class="d-flex align-items-center mt-3">
+                            <i class="fas fa-user-circle fa-2x text-primary me-2"></i>
+                            <div>
+                                <h6 class="mb-0">Marc D.</h6>
+                                <small class="text-muted">Abidjan, Côte d'Ivoire</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="testimony-card h-100">
+                        <p class="quote">"Après des mois de chômage, j'ai trouvé un emploi stable une semaine après que l'équipe de prière ait intercédé pour moi."</p>
+                        <div class="d-flex align-items-center mt-3">
+                            <i class="fas fa-user-circle fa-2x text-primary me-2"></i>
+                            <div>
+                                <h6 class="mb-0">Élise T.</h6>
+                                <small class="text-muted">Bruxelles, Belgique</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="#" class="btn btn-outline-primary">
+                    <i class="fas fa-share-alt me-2"></i> Partager mon témoignage
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (identique) -->
+    <footer>
+        <!-- ... même footer ... -->
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Événements - Mouvement de Réveil Méthodiste</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- CSS personnalisé -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar (identique à l'index) -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Réveil en ligne <span>MRM</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="evenements.html"><i class="fas fa-calendar-alt"></i> Événements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="multimedia.html"><i class="fas fa-video"></i> Multimédia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="priere.html"><i class="fas fa-pray"></i> Espace prière</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="enseignements.html"><i class="fas fa-book-open"></i> Enseignements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="communaute.html"><i class="fas fa-users"></i> Communauté</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-sm btn-warning text-primary ms-2" href="#"><i class="fas fa-heart"></i> Soutenir</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- News Ticker -->
+    <div class="news-ticker">
+        <div class="container">
+            <div class="ticker-wrapper d-flex align-items-center">
+                <span class="fw-bold me-3"><i class="fas fa-bullhorn"></i> Actualités :</span>
+                <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+                    Veillée de prière ce vendredi à 20h • Nouvelle série d'enseignements disponible • Témoignage inspirant ajouté cette semaine
+                </marquee>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container text-center">
+            <i class="fas fa-calendar-alt page-icon"></i>
+            <h1 class="page-title">Événements du Mouvement</h1>
+            <p class="lead">Découvrez nos prochaines rencontres spirituelles et inscrivez-vous pour y participer</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container py-5">
+        <section class="mb-5">
+            <h2 class="section-title">Tous nos événements</h2>
+            <div class="row">
+                <!-- Événement 1 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card event-card h-100">
+                        <img src="https://api.placeholder.com/400/320" class="card-img-top" alt="Veillée de prière">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary"><i class="fas fa-calendar"></i> 15 Mai 2025</span>
+                                <span class="badge bg-warning text-dark">20:00</span>
+                            </div>
+                            <h5 class="card-title">Veillée de prière mensuelle</h5>
+                            <p class="card-text">Une soirée d'intercession pour la nation et les besoins spirituels de la communauté.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-muted"><i class="fas fa-map-marker-alt"></i> En ligne</span>
+                                <a href="#" class="btn btn-primary btn-sm">S'inscrire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Événement 2 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card event-card h-100">
+                        <img src="https://api.placeholder.com/400/320" class="card-img-top" alt="Étude biblique">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary"><i class="fas fa-calendar"></i> 22 Mai 2025</span>
+                                <span class="badge bg-warning text-dark">18:30</span>
+                            </div>
+                            <h5 class="card-title">Étude biblique interactive</h5>
+                            <p class="card-text">Approfondissement sur le livre des Actes et les fondements de l'église primitive.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-muted"><i class="fas fa-map-marker-alt"></i> Église Centrale</span>
+                                <a href="#" class="btn btn-primary btn-sm">S'inscrire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Événement 3 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card event-card h-100">
+                        <img src="https://api.placeholder.com/400/320" class="card-img-top" alt="Retraite spirituelle">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary"><i class="fas fa-calendar"></i> 1-3 Juin 2025</span>
+                                <span class="badge bg-warning text-dark">Weekend</span>
+                            </div>
+                            <h5 class="card-title">Retraite spirituelle</h5>
+                            <p class="card-text">Un temps mis à part pour la sanctification et le ressourcement spirituel.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-muted"><i class="fas fa-map-marker-alt"></i> Centre Spirituel</span>
+                                <a href="#" class="btn btn-primary btn-sm">S'inscrire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plus d'événements... -->
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-outline-primary">Voir les événements passés</a>
+            </div>
+        </section>
+
+        <section class="bg-light p-4 rounded mb-5">
+            <h2 class="section-title">Inscrivez-vous à notre newsletter</h2>
+            <p class="mb-4">Recevez toutes nos actualités et invitations aux événements directement dans votre boîte email.</p>
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Votre nom">
+                </div>
+                <div class="col-md-6">
+                    <input type="email" class="form-control" placeholder="Votre email">
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">S'inscrire</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer (identique à l'index) -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4">Réveil en ligne</h5>
+                    <p>Une plateforme du Mouvement de Réveil Méthodiste pour l'édification spirituelle, la prière et l'enseignement.</p>
+                    <div class="social-links mt-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fas fa-blog"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Liens rapides</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white">Accueil</a></li>
+                        <li class="mb-2"><a href="evenements.html" class="text-white">Événements</a></li>
+                        <li class="mb-2"><a href="multimedia.html" class="text-white">Multimédia</a></li>
+                        <li class="mb-2"><a href="priere.html" class="text-white">Espace prière</a></li>
+                        <li class="mb-2"><a href="enseignements.html" class="text-white">Enseignements</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Ressources</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white">Prédications</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">PDF à télécharger</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Quiz bibliques</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Formations en ligne</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Témoignages</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase mb-4">Contact</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> contact@reveil-mrm.org</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> +225 0123456789</li>
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Abidjan, Côte d'Ivoire</li>
+                    </ul>
+                    <a href="#" class="btn btn-warning mt-3">Faire un don</a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-3 mt-4" style="background-color: rgba(0, 0, 0, 0.2);">
+            &copy; 2025 Mouvement de Réveil Méthodiste. Tous droits réservés.
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

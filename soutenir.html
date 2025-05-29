@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soutenir le MRM - Mouvement de Réveil Méthodiste</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome pour les icônes -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+   
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Réveil en ligne <span>MRM</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="evenements.html"><i class="fas fa-calendar-alt"></i> Événements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="multimedia.html"><i class="fas fa-video"></i> Multimédia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="priere.html"><i class="fas fa-pray"></i> Espace prière</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="enseignements.html"><i class="fas fa-book-open"></i> Enseignements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="soutenir.html"><i class="fas fa-heart"></i> Soutenir</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-4">Soutenir le Mouvement de Réveil Méthodiste</h1>
+                    <p class="lead">Votre générosité permet de propager la Parole de Dieu et de toucher des vies à travers nos différentes activités.</p>
+                    <div class="mt-4">
+                        <a href="#donate" class="btn btn-warning me-2"><i class="fas fa-donate"></i> Faire un don maintenant</a>
+                        <a href="#impact" class="btn btn-outline-light"><i class="fas fa-hands-helping"></i> Voir notre impact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container py-5">
+        <!-- Why Give Section -->
+        <section class="mb-5">
+            <h2 class="section-title">Pourquoi soutenir le MRM ?</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Le Mouvement de Réveil Méthodiste est une œuvre de foi qui dépend des dons et offrandes de personnes comme vous pour accomplir sa mission. Votre soutien financier permet :</p>
+                    <ul class="list-group mb-4">
+                        <li class="list-group-item d-flex align-items-center">
+                            <i class="fas fa-check-circle text-success me-3"></i>
+                            <span>La production et diffusion de contenus spirituels de qualité</span>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <i class="fas fa-check-circle text-success me-3"></i>
+                            <span>L'organisation d'événements et veillées de prière</span>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <i class="fas fa-check-circle text-success me-3"></i>
+                            <span>Le développement de programmes de formation biblique</span>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <i class="fas fa-check-circle text-success me-3"></i>
+                            <span>L'entretien de nos plateformes technologiques</span>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <i class="fas fa-check-circle text-success me-3"></i>
+                            <span>Le soutien aux missionnaires et œuvres partenaires</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <div class="card donation-card">
+                        <div class="card-body text-center">
+                            <h4><i class="fas fa-quote-left text-muted"></i> Donnez avec joie</h4>
+                            <div class="ratio ratio-16x9 my-4">
+                                <img src="https://api.placeholder.com/400/320" class="rounded" alt="Donner avec joie">
+                            </div>
+                            <p class="card-text">"Que chacun donne comme il l'a résolu en son cœur, sans tristesse ni contrainte; car Dieu aime celui qui donne avec joie."</p>
+                            <p class="text-end mb-0 fw-bold">- 2 Corinthiens 9:7</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Donation Form -->
+        <section id="donate" class="mb-5 bg-light p-4 rounded">
+            <h2 class="section-title">Faire un don</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <form id="donationForm">
+                        <div class="mb-4">
+                            <h5 class="mb-3">Montant du don</h5>
+                            <div class="row g-2">
+                                <div class="col-4">
+                                    <input type="radio" class="btn-check" name="amount" id="amount1" value="5000" autocomplete="off">
+                                    <label class="btn btn-outline-primary w-100" for="amount1">5 000 FCFA</label>
+                                </div>
+                                <div class="col-4">
+                                    <input type="radio" class="btn-check" name="amount" id="amount2" value="10000" autocomplete="off">
+                                    <label class="btn btn-outline-primary w-100" for="amount2">10 000 FCFA</label>
+                                </div>
+                                <div class="col-4">
+                                    <input type="radio" class="btn-check" name="amount" id="amount3" value="20000" autocomplete="off">
+                                    <label class="btn btn-outline-primary w-100" for="amount3">20 000 FCFA</label>
+                                </div>
+                                <div class="col-6">
+                                    <input type="radio" class="btn-check" name="amount" id="amount4" value="50000" autocomplete="off">
+                                    <label class="btn btn-outline-primary w-100" for="amount4">50 000 FCFA</label>
+                                </div>
+                                <div class="col-6">
+                                    <input type="radio" class="btn-check" name="amount" id="amount5" value="100000" autocomplete="off">
+                                    <label class="btn btn-outline-primary w-100" for="amount5">100 000 FCFA</label>
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <div class="input-group">
+                                        <span class="input-group-text">Autre montant</span>
+                                        <input type="number" class="form-control" id="customAmount" placeholder="Entrez un montant">
+                                        <span class="input-group-text">FCFA</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <h5 class="mb-3">Type de don</h5>
+                            <div class="donation-option">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="donationType" id="oneTime" value="oneTime" checked>
+                                    <label class="form-check-label fw-bold" for="oneTime">
+                                        Don unique
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="donation-option">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="donationType" id="monthly" value="monthly">
+                                    <label class="form-check-label fw-bold" for="monthly">
+                                        Don mensuel
+                                    </label>
+                                    <p class="small text-muted mt-1 mb-0">Soutenez notre mission de manière régulière</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <h5 class="mb-3">Méthode de paiement</h5>
+                            <div class="payment-method" onclick="selectPayment('mobileMoney')">
+                                <input type="radio" class="form-check-input me-2" name="paymentMethod" id="mobileMoney" value="mobileMoney" checked>
+                                <img src="https://api.placeholder.com/30x30" alt="Mobile Money">
+                                <div>
+                                    <h6 class="mb-0">Mobile Money</h6>
+                                    <small class="text-muted">Orange Money, MTN Mobile Money</small>
+                                </div>
+                            </div>
+                            <div class="payment-method" onclick="selectPayment('creditCard')">
+                                <input type="radio" class="form-check-input me-2" name="paymentMethod" id="creditCard" value="creditCard">
+                                <img src="https://api.placeholder.com/30x30" alt="Carte bancaire">
+                                <div>
+                                    <h6 class="mb-0">Carte bancaire</h6>
+                                    <small class="text-muted">Visa, Mastercard, etc.</small>
+                                </div>
+                            </div>
+                            <div class="payment-method" onclick="selectPayment('bankTransfer')">
+                                <input type="radio" class="form-check-input me-2" name="paymentMethod" id="bankTransfer" value="bankTransfer">
+                                <img src="https://api.placeholder.com/30x30" alt="Virement bancaire">
+                                <div>
+                                    <h6 class="mb-0">Virement bancaire</h6>
+                                    <small class="text-muted">Transfert direct à notre compte</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="donorName" class="form-label">Votre nom complet</label>
+                            <input type="text" class="form-control" id="donorName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="donorEmail" class="form-label">Votre email</label>
+                            <input type="email" class="form-control" id="donorEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="donorPhone" class="form-label">Votre numéro de téléphone</label>
+                            <input type="tel" class="form-control" id="donorPhone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="donorMessage" class="form-label">Message (optionnel)</label>
+                            <textarea class="form-control" id="donorMessage" rows="2"></textarea>
+                        </div>
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" id="taxReceipt" checked>
+                            <label class="form-check-label" for="taxReceipt">
+                                Je souhaite recevoir un reçu fiscal pour mon don
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 py-3 fw-bold">
+                            <i class="fas fa-donate"></i> FAIRE MON DON MAINTENANT
+                        </button>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card donation-card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title mb-4"><i class="fas fa-lock text-success"></i> Dons sécurisés</h4>
+                            <p class="card-text">Toutes les transactions sur notre plateforme sont cryptées et sécurisées. Nous utilisons les dernières technologies pour protéger vos informations.</p>
+                            
+                            <div class="impact-card mt-4">
+                                <h5><i class="fas fa-bullseye"></i> Affectation des dons</h5>
+                                <p>Vous pouvez préciser comment vous souhaitez que votre don soit utilisé :</p>
+                                <select class="form-select mb-3">
+                                    <option selected>Utilisation générale du ministère</option>
+                                    <option>Production de contenus multimédias</option>
+                                    <option>Organisation d'événements</option>
+                                    <option>Soutien aux missionnaires</option>
+                                    <option>Développement technologique</option>
+                                    <option>Autre (précisez dans le message)</option>
+                                </select>
+                            </div>
+                            
+                            <div class="testimony-card mt-4">
+                                <p class="quote">"Donner au MRM a été une bénédiction pour moi. Voir l'impact de mes dons dans la vie des gens me remplit de joie."</p>
+                                <div class="d-flex align-items-center mt-3">
+                                    <i class="fas fa-user-circle fa-2x text-primary me-2"></i>
+                                    <div>
+                                        <h6 class="mb-0">Martine K.</h6>
+                                        <small class="text-muted">Donatrice régulière</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Section -->
+        <section id="impact" class="mb-5">
+            <h2 class="section-title">L'impact de votre soutien</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="display-4 text-primary mb-3">
+                                <i class="fas fa-video"></i>
+                            </div>
+                            <h4>50+ vidéos</h4>
+                            <p class="card-text">Produites et diffusées chaque mois grâce à vos dons</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="display-4 text-primary mb-3">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h4>10 000+ personnes</h4>
+                            <p class="card-text">Touchées par nos programmes chaque année</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="display-4 text-primary mb-3">
+                                <i class="fas fa-praying-hands"></i>
+                            </div>
+                            <h4>100+ veillées</h4>
+                            <p class="card-text">Organisées depuis le début du mouvement</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Other Ways to Give -->
+        <section class="mb-5">
+            <h2 class="section-title">Autres moyens de soutenir</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title"><i class="fas fa-hand-holding-usd text-primary"></i> Dons en nature</h4>
+                            <p class="card-text">Nous acceptons également les dons en nature (équipements, locaux, etc.) pour soutenir nos activités.</p>
+                            <a href="#" class="btn btn-outline-primary">Nous contacter</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title"><i class="fas fa-user-tie text-primary"></i> Parrainage</h4>
+                            <p class="card-text">Devenez parrain/marraine d'un projet spécifique ou d'un missionnaire soutenu par le MRM.</p>
+                            <a href="#" class="btn btn-outline-primary">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title"><i class="fas fa-hands-helping text-primary"></i> Bénévolat</h4>
+                            <p class="card-text">Offrez votre temps et vos compétences pour soutenir notre mission.</p>
+                            <a href="#" class="btn btn-outline-primary">Rejoindre l'équipe</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FAQ Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Questions fréquentes</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                            Mon don est-il sécurisé ?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Oui, toutes les transactions sur notre plateforme sont cryptées et sécurisées. Nous utilisons des passerelles de paiement reconnues qui garantissent la protection de vos informations financières.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                            Puis-je recevoir un reçu pour mon don ?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Absolument. Tous les donateurs reçoivent automatiquement un reçu par email. Pour les dons éligibles à des déductions fiscales, nous fournissons un reçu fiscal officiel sur demande.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                            Comment puis-je modifier ou annuler un don mensuel ?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Vous pouvez modifier ou annuler votre don mensuel à tout moment en nous contactant à donations@reveil-mrm.org ou par téléphone au +225 XX XX XX XX. Nous vous demanderons quelques informations pour identifier votre don.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                            Quels modes de paiement acceptez-vous ?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Nous acceptons les paiements par Mobile Money (Orange Money, MTN Mobile Money), cartes bancaires (Visa, Mastercard) et virements bancaires. Les détails pour chaque méthode sont disponibles lors du processus de don.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4">Réveil en ligne</h5>
+                    <p>Une plateforme du Mouvement de Réveil Méthodiste pour l'édification spirituelle, la prière et l'enseignement.</p>
+                    <div class="social-links mt-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fas fa-blog"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Liens rapides</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white">Accueil</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Événements</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Multimédia</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Espace prière</a></li>
+                        <li class="mb-2"><a href="soutenir.html" class="text-white">Soutenir</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Ressources</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white">Prédications</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">PDF à télécharger</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Quiz bibliques</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Formations en ligne</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase mb-4">Contact</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> contact@reveil-mrm.org</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> +225 0123456789</li>
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Abidjan, Côte d'Ivoire</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-3 mt-4" style="background-color: rgba(0, 0, 0, 0.2);">
+            &copy; 2025 Mouvement de Réveil Méthodiste. Tous droits réservés.
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script>
+        // Sélection des méthodes de paiement
+        function selectPayment(method) {
+            document.getElementById(method).checked = true;
+            const paymentMethods = document.querySelectorAll('.payment-method');
+            paymentMethods.forEach(pm => {
+                pm.classList.remove('active');
+                if (pm.querySelector('input').value === method) {
+                    pm.classList.add('active');
+                }
+            });
+        }
+        
+        // Gestion des montants de don
+        const amountRadios = document.querySelectorAll('input[name="amount"]');
+        const customAmount = document.getElementById('customAmount');
+        
+        amountRadios.forEach(radio => {
+            radio.addEventListener('change', function() {
+                customAmount.value = '';
+            });
+        });
+        
+        customAmount.addEventListener('focus', function() {
+            amountRadios.forEach(radio => radio.checked = false);
+        });
+        
+        // Soumission du formulaire (simulé pour l'exemple)
+        document.getElementById('donationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Merci pour votre don! Cette fonctionnalité serait connectée à une passerelle de paiement réelle en production.');
+            // Ici, vous intégreriez votre solution de paiement (Mobile Money, carte bancaire, etc.)
+        });
+    </script>
+</body>
+</html>
